@@ -1,4 +1,7 @@
+import sys
+sys.path.insert(0, '../src')
 import unittest
+from funcoes_aritmeticas_basicas import *
 
 
 class FuncoesAritmeticasBasicasTest(unittest.TestCase):
