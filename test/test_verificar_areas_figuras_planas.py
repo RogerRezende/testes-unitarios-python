@@ -113,3 +113,6 @@ class AreasFigurasPlanasTests(unittest.TestCase):
 
         # Assert
         self.assertEqual(resultado, 12.57)
+
+if __name__ == '__main__':
+    unittest.main()
