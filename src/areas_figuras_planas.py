@@ -18,7 +18,7 @@ def area_losango(diagonal_menor, diagonal_maior):
 
 
 def area_trapezio(base_menor, base_maior, altura):
-    return ((base_maior * base_menor) * altura) / 2
+    return ((base_maior + base_menor) * altura) / 2
 
 
 def area_triangulo_qualquer(base, altura):

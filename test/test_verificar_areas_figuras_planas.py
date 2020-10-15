@@ -90,7 +90,7 @@ class AreasFigurasPlanasTests(unittest.TestCase):
         resultado = area_triangulo_equilatero(lado)
 
         # Assert
-        self.assertEqual(resultado, 62.35) # 62.35382907247958
+        self.assertEqual(resultado, 62.35) 
 
     def test_area_triangulo_formula_heron_correta(self):
         # Arrange
@@ -112,4 +112,4 @@ class AreasFigurasPlanasTests(unittest.TestCase):
         resultado = area_circulo(raio)
 
         # Assert
-        self.assertEqual(resultado, 12.57) # 3.141592653589793 12.56637061435917
+        self.assertEqual(resultado, 12.57)
