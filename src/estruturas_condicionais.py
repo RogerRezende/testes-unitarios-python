@@ -36,7 +36,7 @@ def par_ou_impar(a):
 def maior_e_diferenca(a, b):
     if a > b:
         resultado = a - b
-        return "maior - " + a + " - diferenca - " + resultado
+        return "maior - {} - diferenca - {}".format(a, resultado)
     else:
         resultado = b - a
-        return "maior - " + b + " - diferenca - " + resultado
+        return "maior - {} - diferenca - {}".format(b, resultado)
