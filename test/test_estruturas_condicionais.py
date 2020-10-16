@@ -27,6 +27,17 @@ class EstruturasCondicionaisTests(unittest.TestCase):
         # Assert
         self.assertEqual(resultado, b)
 
+    def test_maior_numero(self):
+        # Arrange
+        a = 30
+        b = 30
+
+        # Act
+        resultado = maior_numero(a, b)
+
+        # Assert
+        self.assertEqual(resultado, "Numeros Iguais")
+
     def test_raiz_quadrada_ou_numero_invalido1(self):
         # Arrange
         a = 9
