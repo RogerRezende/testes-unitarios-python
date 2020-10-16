@@ -4,8 +4,10 @@ import math
 def maior_numero(a, b):
     if a > b:
         return a
-    else:
+    elif a < b:
         return b
+    else:
+        return "Numeros Iguais"
 
 
 def raiz_quadrada_ou_numero_invalido(a):
