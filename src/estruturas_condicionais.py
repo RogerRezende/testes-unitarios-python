@@ -15,3 +15,12 @@ def raiz_quadrada_ou_numero_invalido(a):
         return "Numero Invalido"
     else:
         return 0
+
+
+def raiz_quadrada_ou_quadrado(a):
+    if a > 0:
+        return math.sqrt(a)
+    elif a < 0:
+        return a * a
+    else:
+        return 0
