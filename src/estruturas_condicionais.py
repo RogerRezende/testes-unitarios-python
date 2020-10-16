@@ -31,3 +31,12 @@ def par_ou_impar(a):
         return "par"
     else:
         return "impar"
+
+
+def maior_e_diferenca(a, b):
+    if a > b:
+        resultado = a - b
+        return "maior - " + a + " - diferenca - " + resultado
+    else:
+        resultado = b - a
+        return "maior - " + b + " - diferenca - " + resultado
