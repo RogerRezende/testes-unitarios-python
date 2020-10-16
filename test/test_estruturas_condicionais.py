@@ -96,7 +96,7 @@ class EstruturasCondicionaisTests(unittest.TestCase):
         resultado = maior_e_diferenca(a, b)
 
         # Assert
-        self.assertEqual(resultado, "maior - " + a + " - diferenca - 9")
+        self.assertEqual(resultado, "maior - {} - diferenca - {}".format(a, a - b))
 
     def test_maior_e_diferenca2(self):
         # Arrange
@@ -107,7 +107,7 @@ class EstruturasCondicionaisTests(unittest.TestCase):
         resultado = maior_e_diferenca(a, b)
 
         # Assert
-        self.assertEqual(resultado, "maior - " + b + " - diferenca - 22")
+        self.assertEqual(resultado, "maior - {} - diferenca - {}".format(b, b - a))
 
 if __name__ == '__main__':
     unittest.main()
