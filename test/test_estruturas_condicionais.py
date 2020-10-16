@@ -164,7 +164,7 @@ class EstruturasCondicionaisTests(unittest.TestCase):
         # Assert
         self.assertEqual(resultado, "Emprestimo concedido")
 
-    def test_emprestimo1(self):
+    def test_emprestimo2(self):
         # Arrange
         salario = 1000
         prestacao_emprestimo = 250
@@ -174,6 +174,28 @@ class EstruturasCondicionaisTests(unittest.TestCase):
 
         # Assert
         self.assertEqual(resultado, "Emprestimo nao concedido")
+
+    def test_peso_ideal1(self):
+        # Arrange
+        altura = 1.80
+        sexo = "homem"
+
+        # Act
+        resultado = peso_ideal(altura, sexo)
+
+        # Assert
+        self.assertEqual(resultado, 72.86)
+
+    def test_peso_ideal2(self):
+        # Arrange
+        altura = 1.80
+        sexo = "mulher"
+
+        # Act
+        resultado = peso_ideal(altura, sexo)
+
+        # Assert
+        self.assertEqual(resultado, 67.08)
 
 if __name__ == '__main__':
     unittest.main()
