@@ -47,5 +47,25 @@ class EstruturasCondicionaisTests(unittest.TestCase):
         # Assert
         self.assertEqual(resultado, "Numero Invalido")
 
+    def test_raiz_quadrada_ou_quadrado1(self):
+        # Arrange
+        a = 9
+
+        # Act
+        resultado = raiz_quadrada_ou_quadrado(a)
+
+        # Assert
+        self.assertEqual(resultado, 3)
+
+    def test_raiz_quadrada_ou_quadrado2(self):
+        # Arrange
+        a = -9
+
+        # Act
+        resultado = raiz_quadrada_ou_quadrado(a)
+
+        # Assert
+        self.assertEqual(resultado, 81)
+
 if __name__ == '__main__':
     unittest.main()
