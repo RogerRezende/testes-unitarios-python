@@ -153,5 +153,27 @@ class EstruturasCondicionaisTests(unittest.TestCase):
         # Assert
         self.assertEqual(resultado, "Nota Invalida")
 
+    def test_emprestimo1(self):
+        # Arrange
+        salario = 1000
+        prestacao_emprestimo = 100
+
+        # Act
+        resultado = emprestimo(salario, prestacao_emprestimo)
+
+        # Assert
+        self.assertEqual(resultado, "Emprestimo concedido")
+
+    def test_emprestimo1(self):
+        # Arrange
+        salario = 1000
+        prestacao_emprestimo = 250
+
+        # Act
+        resultado = emprestimo(salario, prestacao_emprestimo)
+
+        # Assert
+        self.assertEqual(resultado, "Emprestimo nao concedido")
+
 if __name__ == '__main__':
     unittest.main()
