@@ -67,5 +67,25 @@ class EstruturasCondicionaisTests(unittest.TestCase):
         # Assert
         self.assertEqual(resultado, 81)
 
+    def test_par_ou_impar1(self):
+        # Arrange
+        a = 7
+
+        # Act
+        resultado = par_ou_impar(a)
+
+        # Assert
+        self.assertEqual(resultado, "impar")
+
+    def test_par_ou_impar2(self):
+        # Arrange
+        a = 32
+
+        # Act
+        resultado = par_ou_impar(a)
+
+        # Assert
+        self.assertEqual(resultado, "par")
+
 if __name__ == '__main__':
     unittest.main()
