@@ -24,3 +24,10 @@ def raiz_quadrada_ou_quadrado(a):
         return a * a
     else:
         return 0
+
+
+def par_ou_impar(a):
+    if a % 2 == 0:
+        return "par"
+    else:
+        return "impar"
