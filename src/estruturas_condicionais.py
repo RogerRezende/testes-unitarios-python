@@ -50,7 +50,7 @@ def media_aluno_ou_nota_invalida(a, b):
     elif b < 0 or b > 10:
         return "Nota Invalida"
     else:
-        return (a + b) / 2
+        return round((a + b) / 2, 1)
 
 
 def emprestimo(salario, prestacao_emprestimo):
@@ -58,3 +58,10 @@ def emprestimo(salario, prestacao_emprestimo):
         return "Emprestimo nao concedido"
     else:
         return "Emprestimo concedido"
+
+
+def peso_ideal(altura, sexo):
+    if sexo == "homem":
+        return round((72.7 * altura) - 58, 2)
+    else:
+        return round((62.1 * altura) - 44.7, 2)
