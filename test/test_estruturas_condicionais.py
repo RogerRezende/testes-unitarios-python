@@ -27,7 +27,7 @@ class EstruturasCondicionaisTests(unittest.TestCase):
         # Assert
         self.assertEqual(resultado, b)
 
-    def test_maior_numero(self):
+    def test_maior_numero3(self):
         # Arrange
         a = 30
         b = 30
@@ -119,6 +119,39 @@ class EstruturasCondicionaisTests(unittest.TestCase):
 
         # Assert
         self.assertEqual(resultado, "maior - {} - diferenca - {}".format(b, b - a))
+
+    def test_media_aluno_ou_nota_invalida1(self):
+        # Arrange
+        a = 8
+        b = 6
+
+        # Act
+        resultado = media_aluno_ou_nota_invalida(a, b)
+
+        # Assert
+        self.assertEqual(resultado, 7)
+
+    def test_media_aluno_ou_nota_invalida2(self):
+        # Arrange
+        a = -1
+        b = 7
+
+        # Act
+        resultado = media_aluno_ou_nota_invalida(a, b)
+
+        # Assert
+        self.assertEqual(resultado, "Nota Invalida")
+
+    def test_media_aluno_ou_nota_invalida3(self):
+        # Arrange
+        a = 10
+        b = 15
+
+        # Act
+        resultado = media_aluno_ou_nota_invalida(a, b)
+
+        # Assert
+        self.assertEqual(resultado, "Nota Invalida")
 
 if __name__ == '__main__':
     unittest.main()
