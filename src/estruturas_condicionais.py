@@ -51,3 +51,10 @@ def media_aluno_ou_nota_invalida(a, b):
         return "Nota Invalida"
     else:
         return (a + b) / 2
+
+
+def emprestimo(salario, prestacao_emprestimo):
+    if prestacao_emprestimo > salario * 0.2:
+        return "Emprestimo nao concedido"
+    else:
+        return "Emprestimo concedido"
