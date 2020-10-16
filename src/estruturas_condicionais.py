@@ -42,3 +42,12 @@ def maior_e_diferenca(a, b):
     else:
         resultado = b - a
         return "maior - {} - diferenca - {}".format(b, resultado)
+
+
+def media_aluno_ou_nota_invalida(a, b):
+    if a < 0 or a > 10:
+        return "Nota Invalida"
+    elif b < 0 or b > 10:
+        return "Nota Invalida"
+    else:
+        return (a + b) / 2
